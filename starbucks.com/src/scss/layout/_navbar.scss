@@ -1,0 +1,144 @@
+nav {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+
+    #global {
+        
+        display: flex;
+         padding: 22px 30px;
+        align-items: center;
+        gap: 31px;
+
+
+        .st-logo {
+            @media (max-width:768px){
+               display:none;
+            }
+   
+
+            img {
+                width: 51px;
+                height: 51px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .menu-icon{
+                 
+                
+                i{
+                    // display: none;
+                }
+            }
+        }
+
+        .st-menu {
+      @media (max-width:768px) {
+
+   display: none;
+    
+   }
+            
+            display: flex;
+             width: 100%;
+            align-items: baseline;
+            justify-content: space-between;
+
+            .menu1 {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    align-items: end;
+                    gap: 30px;
+
+                    li {
+                        font-size: 17px;
+                        font-weight: bold;
+                        font-style: normal;
+                        color: rgba(0, 0, 0, .87);
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-family: 'Secular One', sans-serif;
+                        transition:  .3s ease-in-out;
+                        cursor: pointer;
+                        &:hover{
+                            color: green;
+                            
+                        }
+                    }
+                }
+            }
+
+            .menu2 {
+                display: flex;
+                align-items: center;
+                gap: 31px;
+
+                .find {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 22px;
+                        transition:  .3s ease-in-out;
+                        &:hover{
+                            color: green;
+                            
+                        }
+                    }
+
+                    h2 {
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        transition:  .3s ease-in-out;
+                        &:hover{
+                            color: green;
+                            
+                        }
+                        
+                    }
+                }
+
+                .site-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 21px;
+
+                    .btn1 {
+                        padding: 7px 16px;
+                        background: none;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-radius: 50px;
+                        font-weight: 600;
+                        text-align: center;
+                        text-decoration: none;
+                        letter-spacing: 1px;
+                        transition: .3s ease-in-out;
+                        &:hover{
+                            background-color: #edebe9;
+                        }
+                    }
+                    .btn2 {
+                        padding: 7px 21px;
+                        background-color: black;
+                        color: #fff;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-radius: 50px;
+                        font-weight: 600;
+                        text-align: center;
+                        text-decoration: none;
+                        letter-spacing: 1px;
+                        transition: .2s ease-in-out;
+                        filter: brightness(100%);
+                        &:hover{
+                            filter: brightness(50%);
+                         }
+                    }
+                    }
+
+                }
+            }
+        }
+    }
